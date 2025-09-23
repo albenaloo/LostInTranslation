@@ -70,6 +70,8 @@ public class CountryCodeConverter {
      * @return the name of the country corresponding to the code
      */
     public String fromCountryCode(String code) {
+        if (code == null) return null;
+        code = countryCodeToCountry.get(code);
         // TODO Task B: update this code to use an instance variable to return the correct valuefrom
         return code;
     }
